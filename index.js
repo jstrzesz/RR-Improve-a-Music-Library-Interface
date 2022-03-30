@@ -25,6 +25,7 @@ app.get('/song/:albumId', async (req, res) => {
 })
 
 app.get('*', (req, res) => {
+    console.log('hello');
     res.status(404).send('404: Not Found')
 })
 
